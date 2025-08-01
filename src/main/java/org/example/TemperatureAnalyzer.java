@@ -48,6 +48,24 @@ public class TemperatureAnalyzer {
         Double day1TempWrapper = Double.valueOf(day1TempPrimitive);
         Double day2TempWrapper = Double.valueOf(day2TempPrimitive);
 
+        // Part 3: Comparison (compareTo)
+
+        int comparison = day1TempWrapper.compareTo(day2TempWrapper);
+        System.out.print("Day 1 (" + day1TempWrapper + "°C) was ");
+        switch (comparison) {
+            case 1:
+                System.out.print("warmer than");
+                break;
+            case -1:
+                System.out.print("cooler than");
+                break;
+            default:
+                System.out.print("the same temperature as");
+                break;
+        }
+        System.out.println(" Day 2 (" + day2TempWrapper + "°C).");
+        System.out.println();
+
         sc.close();
     }
 }
