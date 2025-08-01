@@ -66,6 +66,15 @@ public class TemperatureAnalyzer {
         System.out.println(" Day 2 (" + day2TempWrapper + "°C).");
         System.out.println();
 
+        // Part 4: Primitive Extraction (xxxValue)
+
+        float day1TempFloat = day1TempWrapper.floatValue();
+        int day2TempInt = day2TempWrapper.intValue();
+        System.out.println("Extracted Day 1 Temp (primitive float from Double wrapper): " + day1TempFloat + "°C");
+        System.out
+                .println("Extracted Day 2 Temp (primitive int from Double wrapper, truncated): " + day2TempInt + "°C");
+        System.out.println();
+
         sc.close();
     }
 }
