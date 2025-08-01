@@ -43,6 +43,11 @@ public class TemperatureAnalyzer {
         }
         System.out.println();
 
+        // Part 2: Wrapper Object Creation (valueOf)
+
+        Double day1TempWrapper = Double.valueOf(day1TempPrimitive);
+        Double day2TempWrapper = Double.valueOf(day2TempPrimitive);
+
         sc.close();
     }
 }
