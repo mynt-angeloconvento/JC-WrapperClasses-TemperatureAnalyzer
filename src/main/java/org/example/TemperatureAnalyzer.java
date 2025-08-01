@@ -75,6 +75,13 @@ public class TemperatureAnalyzer {
                 .println("Extracted Day 2 Temp (primitive int from Double wrapper, truncated): " + day2TempInt + "°C");
         System.out.println();
 
+        // Part 5: Extension (For the Third Temperature & Finding Max)
+
+        Double day3TempWrapper = Double.valueOf(day3TempPrimitive);
+        Double maxTemp = Math.max(day1TempWrapper, day2TempWrapper);
+        maxTemp = Math.max(maxTemp, day3TempWrapper);
+        System.out.println("The highest temperature recorded was: " + maxTemp + "°C");
+
         sc.close();
     }
 }
